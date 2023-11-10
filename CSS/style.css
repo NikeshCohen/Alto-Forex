@@ -1,3 +1,192 @@
+:root {
+  --white: #eff1f3;
+  --red: #fe0000;
+  --black: #000000;
+  --grey: #555555;
+  --light-grey: rgb(200, 200, 200);
+  --br: 2rem;
+}
+
+/* HTML ELements */
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  background-color: #ff8811;
+  z-index: -9999;
+  background-color: var(--white);
+  font-family: sans-serif;
+}
+
+/* Reusable Elements */
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.btn {
+  border-radius: var(--br);
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  border: 0.2rem solid transparent;
+  transition: all 0.4s ease-in-out;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  height: 5rem;
+}
+
+.btn:hover {
+  color: var(--red);
+  background-color: transparent;
+  border: 0.2rem solid var(--red);
+}
+
+.link {
+  color: var(--grey);
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  font-size: 1.8rem;
+}
+
+.page-link {
+  border-bottom: 0.3rem solid transparent;
+}
+
+.page-link:hover {
+  border-bottom: 0.3rem solid var(--red);
+  color: var(--red);
+}
+
+/* Header */
+
+.header {
+  background-color: var(--light-grey);
+  border-radius: var(--br);
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem;
+  padding: 2rem 4rem;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.header-links {
+  align-items: center;
+  gap: 2rem;
+}
+
+.signals-btn {
+  color: var(--white);
+  background-color: var(--red);
+  margin-bottom: 0.3rem;
+}
+
+/* Mobile-menu */
+
+.mobile-menu-btn {
+  height: 4rem;
+  width: 4rem;
+  display: none;
+}
+
+.mobile-menu {
+  background-color: var(--light-grey);
+  border-radius: var(--br);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid var(--black);
+  z-index: 99;
+  padding: 4rem;
+  gap: 2rem;
+  height: 36rem;
+  display: none;
+}
+
+.show {
+  display: flex;
+  left: 2rem;
+  right: 2rem;
+}
+
+.mobile-menu .header-link:nth-child(5) {
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid var(--grey);
+  text-align: center;
+  width: 100%;
+}
+
+.signals-btn-mobile {
+  margin: 1rem 0 0 0;
+}
+
+.links {
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 4rem;
+  gap: 4rem;
+}
+
+.social-link {
+  border-radius: var(--br);
+  background-color: var(--light-grey);
+  transition: all 0.4s ease-in-out;
+  padding: 3rem;
+  width: 50%;
+}
+
+.social-link-div {
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.social-link-text {
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.instagram:hover {
+  color: var(--white);
+  background-color: #fe0083;
+}
+
+.tiktok:hover {
+  color: var(--white);
+  background-color: black;
+}
+
+.youtube:hover {
+  color: var(--white);
+  background-color: red;
+}
+
+.whatsapp:hover {
+  color: var(--white);
+  background-color: #2bb741;
 }

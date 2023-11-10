@@ -1,0 +1,19 @@
+@media (max-width: 63em) {
+  .header-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .logo {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 42.5em) {
+  .social-link {
+    width: 90%;
+  }
+}
