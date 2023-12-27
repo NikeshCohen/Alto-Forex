@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.cdnfonts.com/css/codec-pro" rel="stylesheet" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/altobull.css" />
-    <link rel="stylesheet" href="CSS/contact.css" />
-    <link rel="stylesheet" href="CSS/queries.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/altobull.css" />
+    <link rel="stylesheet" href="../CSS/queries.css" />
     <link
       rel="shortcut icon"
       href="../images/Alto(Icon).png"
@@ -22,11 +21,17 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <title>Sign Up | Alto Forex Academy</title>
+    <title>Alto Forex | Alto Bull Trader</title>
   </head>
   <body>
     <header class="flex header">
-      <img src="../images/Alto(Logo).png" class="logo" alt="Alto Forex Logo" />
+      <a href="../index.html">
+        <img
+          src="../images/Alto(Logo).png"
+          class="logo"
+          alt="Alto Forex Logo"
+        />
+      </a>
       <div class="flex header-links">
         <a href="#" class="link page-link header-link">Our Mission</a>
         <a href="#" class="link page-link header-link">Services</a>
@@ -46,70 +51,15 @@
       <a href="#" class="link page-link header-link">Contact Us</a>
     </section>
 
-    <section class="flex column contact">
-      <div class="contact__text-box">
-        <h1 class="heading">Course Application</h1>
-        <p class="text">
-          Welcome! We're excited that you're interested in joining the
-          <span> ALTO FOREX ACADEMY Forex Course</span>. Please fill out the
-          application form below to be considered for acceptance.
-        </p>
-      </div>
-      <form
-        class="contact-form"
-        target=""
-        action="https://formsubmit.co/altoforexacademy@gmail.com"
-        method="POST"
-      >
-        <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required />
-
-        <label for="last-name">Last Name:</label>
-        <input type="text" id="last-name" name="last-name" required />
-
-        <label for="phone-number">Phone Number:</label>
-        <input type="text" id="email" name="phone-number" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="age">Age:</label>
-        <input
-          type="number"
-          id="age"
-          name="age"
-          min="18"
-          max="99"
-          class="no-spinner"
-          required
-        />
-
-        <label for="experience">Experience:</label>
-        <select id="experience" name="experience">
-          <option value="beginner">Beginner</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="advanced">Advanced</option>
-          <option value="expert">Expert</option>
-        </select>
-
-        <input
-          type="hidden"
-          name="_autoresponse"
-          value="Thank you for completing your application. We will be in touch."
-        />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://altoforexacademy.co.za/pages/success"
-        />
-        <input
-          type="hidden"
-          name="_blacklist"
-          value="spammy pattern, banned term, phrase"
-        />
-        <input type="hidden" name="_template" value="table" />
-        <button class="flex btn submit-btn" type="submit">Submit</button>
-      </form>
+    <section class="flex column success">
+      <h1 class="heading success-heading">
+        Application Submitted Successfully!
+      </h1>
+      <p class="text">
+        Thank you for applying. Your application has been received, and we
+        appreciate your interest. Our team will review your submission, and you
+        will be notified of the outcome shortly.
+      </p>
     </section>
 
     <footer class="flex footer">
@@ -118,7 +68,7 @@
       </div>
       <div class="flex column footer__features">
         <h2 class="subheading footer-subheading">About</h2>
-        <!-- <a href="#" class="link footer-link">Alto Bull Trader</a> -->
+        <a href="#" class="link footer-link">Alto Bull Trader</a>
         <a href="#" class="link footer-link">Free Signals</a>
         <a href="#" class="link footer-link">Promotions</a>
       </div>

@@ -1,0 +1,72 @@
+@import url("https://fonts.cdnfonts.com/css/codec-pro");
+
+:root {
+  --white: #eff1f3;
+  --light-grey: #c8c8c8;
+  --grey: #555555;
+  --black: #0f1819;
+  --dark-blue: #101728;
+  --blue: #1f41bb;
+  --red: #fe0000;
+  --br: 2rem;
+}
+
+.contact {
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.contact__text-box {
+  text-align: center;
+  width: 40%;
+}
+
+.contact__text-box .text span {
+  font-weight: 600;
+  color: var(--red);
+}
+
+.contact-form {
+  border-radius: var(--br);
+  box-shadow: 3px 3px 28.5px 12px var(--blue);
+  width: 60%;
+  padding: 4rem;
+  width: 40%;
+}
+
+.contact-form label {
+  font-weight: 300;
+  margin: 0 0 3rem 1rem;
+  margin-bottom: 4rem !important;
+  font-size: 2rem;
+}
+
+.contact-form input,
+.contact-form select {
+  background-color: var(--white);
+  border-radius: var(--br);
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 1rem 0 2rem 0;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button,
+select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submit-btn {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+}
